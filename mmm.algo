@@ -1,0 +1,27 @@
+ALGORITHM Phrase
+VAR
+  Phrase: STRING = "";
+  wordNum : INTEGER = 1;
+  VowelNum : INTEGER=0;
+  vowel := (a,e,o,u,i,y)
+
+BEGIN
+Read (Phrase)
+FOR i FROM 0 TO Phrase.length-1  DO
+  
+       IF (Phrase[i] == " ") THEN
+           wordNum +=1
+          
+       END_IF
+       IF
+       (Phrase[i]==vowel)THEN
+       VowelNum+=1;
+   
+       END_IF
+      
+   END_FOR
+    
+  write ("the sentence length:"Phrase.length)
+ write ("the words numbers:" wordNum)
+ write ("the vowels numbers:" VowelNum)
+END
